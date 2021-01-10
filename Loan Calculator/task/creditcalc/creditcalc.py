@@ -1,5 +1,5 @@
 import math
-
+#prueba version
 
 def get_loan_principal():
     return float(input("Enter the loan principal:\n"))
