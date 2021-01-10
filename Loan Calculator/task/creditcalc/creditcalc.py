@@ -1,7 +1,6 @@
 import math
-#prueba version
 import argparse
-print("Test")
+
 
 def get_loan_principal():
     return float(input("Enter the loan principal:\n"))
@@ -20,6 +19,10 @@ def get_monthly_interest():
     # Calculate monthly interest rate
     return annual_interest / 100 / 12
 
+
+parser = argparse.ArgumentParser(description="This program computes annuity and differentiated payments")
+
+parser.add_argument("--type", choices={"annuity", "diff"})
 
 what_to_calc = input('What do you want to calculate?\n' +
                      'type "n" - for number of monthly payments,\n' +
