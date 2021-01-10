@@ -1,6 +1,7 @@
 import math
 #prueba version
 import argparse
+print("Test")
 
 def get_loan_principal():
     return float(input("Enter the loan principal:\n"))
